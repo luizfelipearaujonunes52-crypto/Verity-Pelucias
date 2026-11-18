@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verity Pelúcias</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <h1 class="logo">Verity Pelúcias</h1>
+
+    <nav class="menu">
+      <a href="#produtos">Produtos</a>
+      <a href="#exclusivos">Exclusivos</a>
+      <a href="#novidades">Novidades</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#contato">Contato</a>
+      <a href="#carrinho">Carrinho (<span id="contador">0</span>)</a>
+    </nav>
+  </header>
+
+  <section id="produtos" class="produtos">
+    <h2>Nossos Produtos</h2>
+
+    <div class="grade">
+
+      <article class="produto">
+        <img src="https://http2.mlstatic.com/D_Q_NP_2X_894791-CBT119375994344_112026-P.webp" alt="Pelúcia Verity">
+        <h3>Verity</h3>
+        <p class="preco">R$ 40,00</p>
+        <label class="quantidade">Quantidade:
+          <input type="number" min="0" value="0" data-nome="Verity" data-preco="40" onchange="mudarQuantidade(this)">
+        </label>
+      </article>
+
+      <article class="produto">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_829211-CBT114043280260_072026-O.webp" alt="Pelúcia Verity Insane">
+        <h3>Verity Insane</h3>
+        <p class="preco">R$ 49,90</p>
+        <label class="quantidade">Quantidade:
+          <input type="number" min="0" value="0" data-nome="Verity Insane" data-preco="49.90" onchange="mudarQuantidade(this)">
+        </label>
+      </article>
+
+      <article class="produto">
+        <img src="https://www.aprasi.com/cdn/shop/files/Handmade_Verity_plushie_cotton_filling_close_up_texture_detail.webp?v=1794821397" alt="Pelúcia Obesity">
+        <h3>Obesity</h3>
+        <p class="preco">R$ 69,90</p>
+        <label class="quantidade">Quantidade:
+          <input type="number" min="0" value="0" data-nome="Obesity" data-preco="69.90" onchange="mudarQuantidade(this)">
+        </label>
+      </article>
+
+      <article class="produto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTArGLJ82CacxEalLesgCyOPKMdbtuLWYxVYxikxFis4A&s=10" alt="Pelúcia Falsity">
+        <h3>Falsity</h3>
+        <p class="preco">R$ 40,00</p>
+        <label class="quantidade">Quantidade:
+          <input type="number" min="0" value="0" data-nome="Falsity" data-preco="40" onchange="mudarQuantidade(this)">
+        </label>
+      </article>
+
+      <article class="produto">
+        <span class="selo">Novo</span>
+        <img src="https://http2.mlstatic.com/D_Q_NP_2X_796913-CBT116965850818_092026-P.webp" alt="Pelúcia Lovety">
+        <h3>Lovety</h3>
+        <p class="preco">R$ 59,90</p>
+        <label class="quantidade">Quantidade:
+          <input type="number" min="0" value="0" data-nome="Lovety" data-preco="59.90" onchange="mudarQuantidade(this)">
+        </label>
+      </article>
+
+      <article class="produto">
+        <span class="selo">Novo</span>
+        <img src="https://http2.mlstatic.com/D_Q_NP_2X_823297-CBT115977726426_092026-P.webp" alt="Pelúcia Cruelty">
+        <h3>Cruelty</h3>
+        <p class="preco">R$ 59,90</p>
+        <label class="quantidade">Quantidade:
+          <input type="number" min="0" value="0" data-nome="Cruelty" data-preco="59.90" onchange="mudarQuantidade(this)">
+        </label>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="exclusivos" class="exclusivos">
+    <h2>Edições Exclusivas</h2>
+    <p>Pelúcias especiais, disponíveis por tempo limitado.</p>
+
+    <div class="grade">
+
+      <article class="produto">
+        <span class="selo">Exclusivo</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOK2U7ny0FwiUmgwf-uMpjRC7Hq79kxJgRnNDkpplzfA&s" alt="Pelúcia Lord Verity">
+        <h3>Lord Verity</h3>
+        <p class="preco">R$ 120,00</p>
+        <label class="quantidade">Quantidade:
+          <input type="number" min="0" value="0" data-nome="lord verity" data-preco="120.00" onchange="mudarQuantidade(this)">
+        </label>
+      </article>
+
+      <article class="produto">
+        <span class="selo">Exclusivo</span>
+        <img src="https://down-br.img.susercontent.com/file/sg-11134201-825ap-mr7ggwbjwcued6" alt="Pelúcia verity macabro">
+        <h3>Verity Macabro</h3>
+        <p class="preco">R$ 99,90</p>
+        <label class="quantidade">Quantidade:
+          <input type="number" min="0" value="0" data-nome="Verity Macabro" data-preco="99.90" onchange="mudarQuantidade(this)">
+        </label>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="novidades" class="novidades">
+    <h2>Novidades</h2>
+    <p>Chegaram agora na Verity Pelúcias.</p>
+
+    <div class="grade">
+
+      <article class="produto">
+        <span class="selo">Novo</span>
+        <img src="https://http2.mlstatic.com/D_Q_NP_2X_796913-CBT116965850818_092026-P.webp" alt="Pelúcia Lovity">
+        <h3>Lovety</h3>
+        <p class="preco">R$ 59,90</p>
+        <label class="quantidade">Quantidade:
+          <input type="number" min="0" value="0" data-nome="Lovety" data-preco="59.90" onchange="mudarQuantidade(this)">
+        </label>
+      </article>
+
+      <article class="produto">
+        <span class="selo">Novo</span>
+        <img src="https://http2.mlstatic.com/D_Q_NP_2X_823297-CBT115977726426_092026-P.webp" alt="Pelúcia Cruelty">
+        <h3>Cruelty</h3>
+        <p class="preco">R$ 59,90</p>
+        <label class="quantidade">Quantidade:
+          <input type="number" min="0" value="0" data-nome="Cruelty" data-preco="59.90" onchange="mudarQuantidade(this)">
+        </label>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <h2>Sobre nós</h2>
+    <p class="texto">
+      A Verity Pelúcias nasceu do carinho por personagens que merecem um abraço.
+      Criamos e vendemos pelúcias macias, feitas com capricho, para quem
+      quer levar um pedacinho do Verity para casa.
+    </p>
+
+    <div class="grade">
+      <div class="info">
+        <h3>Feito com carinho</h3>
+        <p>Cada pelúcia é cuidada nos mínimos detalhes.</p>
+      </div>
+      <div class="info">
+        <h3>Super macias</h3>
+        <p>Enchimento de qualidade para abraçar sem medo.</p>
+      </div>
+      <div class="info">
+        <h3>Entrega para todo o Brasil</h3>
+        <p>Você compra aqui e a pelúcia chega até você.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p class="texto">Dúvidas, sugestões ou pedidos especiais? Fale com a gente!</p>
+
+    <div class="contato-dados">
+      <p>E-mail: contato@verityPelucias.com</p>
+      <p>WhatsApp: (67) 96742-6565</p>
+      <p>Atendimento: segunda a sexta, das 9h às 18h</p>
+    </div>
+
+  </section>
+
+  <section id="carrinho" class="carrinho">
+    <h2>Meu Carrinho</h2>
+
+    <ul id="lista-carrinho"></ul>
+
+    <button onclick="verValor()">Continuar com a compra</button>
+    <button onclick="limpar()">Esvaziar carrinho</button>
+
+    <div id="area-pagamento" class="area-pagamento escondido">
+      <p class="total">Total: R$ <span id="total">0,00</span></p>
+
+      <div class="pagamento">
+        <p>Forma de pagamento:</p>
+        <select id="forma" onchange="mudarForma()">
+          <option value="">Escolha uma opção</option>
+          <option value="pix">PIX (5% de desconto)</option>
+          <option value="cartao">Cartão de Crédito</option>
+          <option value="pituca">Cartão Pituca</option>
+        </select>
+
+        <div id="area-parcelas" class="escondido">
+          <p>Em quantas parcelas? (até 10x)</p>
+          <select id="parcelas" onchange="mostrarPagamento()">
+          <option value="1">1x</option>
+          <option value="2">2x</option>
+          <option value="3">3x</option>
+          <option value="4">4x</option>
+          <option value="5">5x</option>
+          <option value="6">6x</option>
+          <option value="7">7x</option>
+          <option value="8">8x</option>
+          <option value="9">9x</option>
+          <option value="10">10x</option>
+          </select>
+        </div>
+
+        <p id="resultado" class="resultado"></p>
+      </div>
+
+      <button id="btn-finalizar" class="escondido" onclick="finalizar()">Finalizar compra</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
